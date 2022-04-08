@@ -1,7 +1,6 @@
 {
 	"name": "portfoliobackend",
 	"version": "1.0.0",
-	"homepage": "https://Andreasgdp.github.io/Portfolio-Backend",
 	"description": "",
 	"main": "package.json",
 	"author": "Andreas G.D Petersen <andreasgdp@gmail.com>",
@@ -9,9 +8,8 @@
 	"scripts": {
 		"start": "sanity start",
 		"build": "sanity build",
-		"manage": "sanity manage",
-		"predeploy": "sanity build public -y",
-		"deploy": "gh-pages -d public"
+		"deploy": "sanity deploy",
+		"manage": "sanity manage"
 	},
 	"keywords": [
 		"sanity"
@@ -31,7 +29,6 @@
 		"styled-components": "^5.2.0"
 	},
 	"devDependencies": {
-		"@sanity/cli": "^2.29.5",
-		"gh-pages": "^3.2.3"
+		"@sanity/cli": "^2.29.5"
 	}
 }
