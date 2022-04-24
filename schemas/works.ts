@@ -8,7 +8,11 @@ export default {
 			title: 'Title',
 			type: 'string',
 		},
-
+		{
+			name: 'category',
+			title: 'Category',
+			type: 'string',
+		},
 		{
 			name: 'year',
 			title: 'Year',
@@ -20,8 +24,8 @@ export default {
 			type: 'string',
 		},
 		{
-			name: 'stacks',
-			title: 'Stacks',
+			name: 'stack',
+			title: 'Stack',
 			type: 'array',
 			of: [{ name: 'stackItem', title: 'Stack Item', type: 'string' }],
 		},
@@ -44,9 +48,16 @@ export default {
 			},
 		},
 		{
-			name: 'videoUrl',
-			title: 'Video Url',
-			type: 'url',
+			name: 'videos',
+			title: 'Videos',
+			type: 'array',
+			of: [
+				{
+					name: 'videoUrl',
+					title: 'Video Url',
+					type: 'url',
+				},
+			],
 		},
 
 		{
